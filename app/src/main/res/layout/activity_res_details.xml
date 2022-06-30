@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ResDetails">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ellipseh" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ellipsev" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="18sp"
+        android:paddingRight="18sp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200sp"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="We need some restarant details!"
+            android:textColor="#BF000000"
+            android:textSize="14dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ownerName"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/ronded_corners"
+            android:hint="Enter owner name"
+            android:textCursorDrawable="@drawable/cusor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/resName"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/ronded_corners"
+                android:hint="Enter restaurant name"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/cusor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tableCount"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/ronded_corners"
+                android:hint="Enter number of tables"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/cusor" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/enterToDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/primary"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</RelativeLayout>
